@@ -93,7 +93,7 @@ this.addEventListener("scroll" , function(){
     if(this.innerHeight + this.scrollY >= document.body.offsetHeight -1000 && ready){
         ready = false;
         console.log("scroll event occured");
-        createAndDisplayPhotos();
+        getPhotosFromApi();
         
     }
 })
