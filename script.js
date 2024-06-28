@@ -90,7 +90,7 @@ async function getPhotosFromApi () {
 
 this.addEventListener("scroll" , function(){
     
-    if(this.innerHeight + this.scrollY >= document.body.offsetHeight -1000 && ready){
+    if(this.innerHeight + this.scrollY >= document.body.offsetHeight -1500 && ready){
         ready = false;
         console.log("scroll event occured");
         getPhotosFromApi();
