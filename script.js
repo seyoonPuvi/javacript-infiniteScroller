@@ -89,8 +89,9 @@ async function getPhotosFromApi () {
 // scroll event occurs when the user scrolls to bottom of the page scroll event occurrs
 
 this.addEventListener("scroll" , function(){
+    console.log(`${this.innerHeight} + ${this.scrollY} >= ${document.body.offsetHeight} - 1500`);
     
-    if(this.innerHeight + this.scrollY >= document.body.offsetHeight -1500 && ready){
+    if(this.innerHeight + this.scrollY >= document.body.offsetHeight-1500 && ready){
         ready = false;
         console.log("scroll event occured");
         getPhotosFromApi();
